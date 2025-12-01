@@ -35,13 +35,13 @@ The repository contains a fully working **Retail Insights Assistant** built usin
 
 - Natural language to SQL using local Mistral model
 - Fuzzy matching for dirty retail data
-- Streamlit chatbot UI
-	**Modes:**
+- Streamlit chatbot UI 
+	**Modes:**  
 	- **Summarization Mode**       simple table summaries  
 	- **Conversational Q&A Mode**  LLM-generated SQL with result viewer
 - DuckDB execution engine
-- Multi-Agent Architecture
-	**Agents:**
+- Multi-Agent Architecture 
+	**Agents:** 
 	- **LanguageToSQLAgent**  converts natural language to SQL  
 	- **ValidationAgent**     ensures only safe SELECT queries  
 	- **SQLExecutionAgent**   executes SQL on DuckDB
@@ -49,26 +49,26 @@ The repository contains a fully working **Retail Insights Assistant** built usin
 
 ## Folder Structure
 
-Blend360_Retail_Insights/
+Blend360_Retail_Insights/ 
 │
-├── app.py
-├── utils.py
-├── agents.py
-├── requirements.txt
-├── README.md
+├── app.py 
+├── utils.py 
+├── agents.py 
+├── requirements.txt 
+├── README.md 
 │
-├── data/
+├── data/ 
 │   ├── All original CSV files given by HR     (Just click on "Clean & {Re)Load All CSVs into DuckDB" on the sidebar controls on Streamlit App. 
 │		                                        It will clean all the CSVs and each cleaned CSVs becomes a DuckDB table. 
-│                                               Also click on "Create master_sales...", it will create a DuckDB table master_sales merging compatible sales tables.)
+│                                               Also click on "Create master_sales...", it will create a DuckDB table master_sales merging compatible sales tables.) 
 │
-├── presentation/
-│   ├── Architecture_Pipeline_PDF.pdf      
-│   ├── Architecture_Pipeline_PPT.pptx   
-│   ├── Streamlit_Demo.mp4     
-│   ├── Sample_Questions.md
+├── presentation/ 
+│   ├── Architecture_Pipeline_PDF.pdf   
+│   ├── Architecture_Pipeline_PPT.pptx 
+│   ├── Streamlit_Demo.mp4   
+│   ├── Sample_Questions.md 
 │
-└── .gitignore
+└── .gitignore 
 
 
 ## Running the Project
@@ -98,20 +98,20 @@ streamlit run app.py
 #### Step 1 - Load Data
 
 - Click on the sidebar controls  
-**Clean & (Re)Load all CSVs into DuckDB**
-**Create master_sales (merge compatible sales tables)**
+**Clean & (Re)Load all CSVs into DuckDB** 
+**Create master_sales (merge compatible sales tables)** 
 
 #### Step 2 - Summarization
 
 - Select a table
 - Click **Generate Summary**
-- The LLM generates:
-	– Column-level insights
-	– Patterns and trends
-	– Anomalies
-	– Business interpretations
-	– Data quality issues
-- Output:
+- The LLM generates: 
+	– Column-level insights 
+	– Patterns and trends 
+	– Anomalies 
+	– Business interpretations 
+	– Data quality issues 
+- Output: 
 	A structured, human-readable dataset summary.
 
 #### Step 3 - Conversational Q&A
