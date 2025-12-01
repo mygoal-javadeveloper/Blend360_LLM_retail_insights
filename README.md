@@ -35,12 +35,12 @@ The repository contains a fully working **Retail Insights Assistant** built usin
 
 - Natural language to SQL using local Mistral model
 - Fuzzy matching for dirty retail data
-- Streamlit chatbot UI
+- Streamlit chatbot UI 
 	**Modes:**
 	- **Summarization Mode**       simple table summaries
 	- **Conversational Q&A Mode**  LLM-generated SQL with result viewer
 - DuckDB execution engine
-- Multi-Agent Architecture
+- Multi-Agent Architecture 
 	**Agents:**
 	- **LanguageToSQLAgent**  converts natural language to SQL 
 	- **ValidationAgent**     ensures only safe SELECT queries 
@@ -49,24 +49,30 @@ The repository contains a fully working **Retail Insights Assistant** built usin
 
 ## Folder Structure
 
-Blend360_Retail_Insights/ 
+Blend360_Retail_Insights/
 │
-├── app.py 
-├── utils.py 
-├── agents.py 
-├── requirements.txt 
-├── README.md 
+├── app.py
+├── utils.py
+├── agents.py
+├── requirements.txt
+├── README.md
 │
-├── data/ 
-│   ├── All original CSV files given by HR     (Just click on "Clean & {Re)Load All CSVs into DuckDB" on the sidebar controls on Streamlit App. 
-│		                                        It will clean all the CSVs and each cleaned CSVs becomes a DuckDB table. 
-│                                               Also click on "Create master_sales...", it will create a DuckDB table master_sales merging compatible sales tables.) 
+├── data/
+│   ├── All original CSV files given by HR  
+│   │
+│   │   (Use the Streamlit sidebar -  
+│   │    **“Clean & (Re)Load All CSVs into DuckDB”**  
+│   │    to clean all CSVs.  
+│   │    Each cleaned CSV automatically becomes a DuckDB table.)
+│   │
+│   │   (Use **“Create master_sales…”** to create a a DuckDB table 
+│   │    `master_sales` table merging compatible sales tables.) 
 │
-├── presentation/ 
-│   ├── Architecture_Pipeline_PDF.pdf 
-│   ├── Architecture_Pipeline_PPT.pptx 
-│   ├── Streamlit_Demo.mp4 
-│   ├── Sample_Questions.md 
+├── presentation/
+│   ├── Architecture_Pipeline_PDF.pdf
+│   ├── Architecture_Pipeline_PPT.pptx
+│   ├── Streamlit_Demo.mp4
+│   ├── Sample_Questions.md
 │
 └── .gitignore 
 
