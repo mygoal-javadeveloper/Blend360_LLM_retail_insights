@@ -1,6 +1,6 @@
 # Designed & Developed By
 
-**Nisrin Dhoondia**
+## **Nisrin Dhoondia**
 
 
 # Retail Insights Assistant, a LLM Multi-Agent System (Blend360 GenAI Assignment)
@@ -63,9 +63,9 @@ Blend360_Retail_Insights/
 │                                               Also click on "Create master_sales...", it will create a DuckDB table master_sales merging compatible sales tables.) 
 │
 ├── presentation/ 
-│   ├── Architecture_Pipeline_PDF.pdf   
+│   ├── Architecture_Pipeline_PDF.pdf 
 │   ├── Architecture_Pipeline_PPT.pptx 
-│   ├── Streamlit_Demo.mp4   
+│   ├── Streamlit_Demo.mp4 
 │   ├── Sample_Questions.md 
 │
 └── .gitignore 
@@ -98,21 +98,21 @@ streamlit run app.py
 #### Step 1 - Load Data
 
 - Click on the sidebar controls  
-**Clean & (Re)Load all CSVs into DuckDB** 
+**Clean & (Re)Load all CSVs into DuckDB**
 **Create master_sales (merge compatible sales tables)** 
 
 #### Step 2 - Summarization
 
 - Select a table
 - Click **Generate Summary**
-- The LLM generates: 
-	– Column-level insights 
-	– Patterns and trends 
-	– Anomalies 
-	– Business interpretations 
-	– Data quality issues 
-- Output: 
-	A structured, human-readable dataset summary.
+- The LLM generates:
+	– Column-level insights
+	– Patterns and trends
+	– Anomalies
+	– Business interpretations
+	– Data quality issues
+- Output:
+	A structured, human-readable dataset summary 
 
 #### Step 3 - Conversational Q&A
 
