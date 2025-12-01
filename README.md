@@ -51,31 +51,33 @@ The repository contains a fully working **Retail Insights Assistant** built usin
 
 Blend360_Retail_Insights/
 
+Blend360_Retail_Insights/
 │
-├── app.py 
-├── utils.py 
-├── agents.py 
-├── requirements.txt 
-├── README.md 
+├── app.py
+├── utils.py
+├── agents.py
+├── requirements.txt
+├── README.md
 │
-├── data/ 
-│   ├── All original CSV files given by HR  
+├── data/
+│   ├── (All original CSV files given by HR)
 │   │
-│   │   (Use the Streamlit sidebar -  
-│   │    **“Clean & (Re)Load All CSVs into DuckDB”**  
-│   │    to clean all CSVs.  
-│   │    Each cleaned CSV automatically becomes a DuckDB table.) 
+│   │  Use the Streamlit sidebar:
+│   │  - **Clean & (Re)Load All CSVs into DuckDB**
+│   │       → Cleans all CSVs  
+│   │       → Each cleaned CSV becomes a DuckDB table
 │   │
-│   │   (Use **“Create master_sales…”** to create a a DuckDB table 
-│   │    `master_sales` table merging compatible sales tables.) 
+│   │  - **Create master_sales…**
+│   │       → Creates a merged `master_sales` DuckDB table  
+│   │         from compatible sales CSV files
 │
-├── presentation/ 
-│   ├── Architecture_Pipeline_PDF.pdf 
-│   ├── Architecture_Pipeline_PPT.pptx 
-│   ├── Streamlit_Demo.mp4 
-│   ├── Sample_Questions.md 
+├── presentation/
+│   ├── Architecture_Pipeline_PDF.pdf
+│   ├── Architecture_Pipeline_PPT.pptx
+│   ├── Streamlit_Demo.mp4
+│   ├── Sample_Questions.md
 │
-└── .gitignore 
+└── .gitignore
 
 
 ## Running the Project
