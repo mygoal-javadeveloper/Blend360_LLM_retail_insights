@@ -74,22 +74,6 @@ Blend360_Retail_Insights/
 
 │   ├── (All original CSV files given by HR) 
 
-│   │ 
-
-│   │  Use the Streamlit sidebar: 
-
-│   │  - **Clean & (Re)Load All CSVs into DuckDB**  
-
-│   │       - Cleans all CSVs  
-
-│   │       - Each cleaned CSV becomes a DuckDB table 
-
-│   │
-
-│   │  - **Create master_sales…** 
-
-│   │       - Creates a  `master_sales` DuckDB table merging compatible sales tables 
-
 │ 
 
 ├── presentation/ 
