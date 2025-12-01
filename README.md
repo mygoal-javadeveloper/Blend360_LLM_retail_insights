@@ -35,13 +35,13 @@ The repository contains a fully working **Retail Insights Assistant** built usin
 
 - Natural language to SQL using local Mistral model
 - Fuzzy matching for dirty retail data
-- Streamlit chatbot UI 
-	**Modes:**
+- Streamlit chatbot UI
+  	**Modes:**
 	- **Summarization Mode**       simple table summaries
 	- **Conversational Q&A Mode**  LLM-generated SQL with result viewer
 - DuckDB execution engine
-- Multi-Agent Architecture 
-	**Agents:**
+- Multi-Agent Architecture
+  	**Agents:**
 	- **LanguageToSQLAgent**  converts natural language to SQL 
 	- **ValidationAgent**     ensures only safe SELECT queries 
 	- **SQLExecutionAgent**   executes SQL on DuckDB 
