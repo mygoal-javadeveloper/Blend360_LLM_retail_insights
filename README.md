@@ -115,12 +115,12 @@ streamlit run app.py
 - Select a table
 - Click **Generate Summary**
 - The LLM generates:
-	– Column-level insights
-	– Patterns and trends
-	– Anomalies
-	– Business interpretations
-	– Data quality issues
-- Output:
+  	– Column-level insights 
+	– Patterns and trends 
+	– Anomalies 
+	– Business interpretations 
+	– Data quality issues 
+- Output: 
 	A structured, human-readable dataset summary 
 
 #### Step 3 - Conversational Q&A
