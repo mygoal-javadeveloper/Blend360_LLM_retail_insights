@@ -30,7 +30,9 @@ The repository contains a fully working **Retail Insights Assistant** built usin
 - Cleans values
 - Loads all cleaned CSVs into DuckDB automatically
 - Two unified structures created:
+  
 	– Each CSV table
+
 	– `master_sales` table (merging compatible sales tables)
 
 - Natural language to SQL using local Mistral model
@@ -71,13 +73,21 @@ Blend360_Retail_Insights/
 ├── data/ 
 
 │   ├── (All original CSV files given by HR) 
+
 │   │ 
+
 │   │  Use the Streamlit sidebar: 
+
 │   │  - **Clean & (Re)Load All CSVs into DuckDB**  
+
 │   │       - Cleans all CSVs  
+
 │   │       - Each cleaned CSV becomes a DuckDB table 
+
 │   │
+
 │   │  - **Create master_sales…** 
+
 │   │       - Creates a  `master_sales` DuckDB table merging compatible sales tables 
 
 │ 
@@ -125,7 +135,8 @@ streamlit run app.py
 
 - Click on the sidebar controls
   
-**Clean & (Re)Load all CSVs into DuckDB** 
+**Clean & (Re)Load all CSVs into DuckDB**  
+
 **Create master_sales (merge compatible sales tables)**  
 
 #### Step 2 - Summarization
@@ -135,15 +146,19 @@ streamlit run app.py
 - The LLM generates: 
   
    	– Column-level insights 
+  
   	– Patterns and trends 
+  
 	– Anomalies 
+
 	– Business interpretations 
+
 	– Data quality issues 
 
 - Output: 
   
     A structured, human-readable dataset summary
-  
+    
 #### Step 3 - Conversational Q&A
 
 - Examples you can type:
