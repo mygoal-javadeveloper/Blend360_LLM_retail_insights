@@ -52,8 +52,6 @@ The repository contains a fully working **Retail Insights Assistant** built usin
 
 ## Folder Structure
 
-Blend360_Retail_Insights/
-
 Blend360_Retail_Insights/  
 
 │ 
@@ -75,13 +73,12 @@ Blend360_Retail_Insights/
 │   ├── (All original CSV files given by HR) 
 │   │ 
 │   │  Use the Streamlit sidebar: 
-│   │  - **Clean & (Re)Load All CSVs into DuckDB** 
-│   │       → Cleans all CSVs  
-│   │       → Each cleaned CSV becomes a DuckDB table 
+│   │  - **Clean & (Re)Load All CSVs into DuckDB**  
+│   │       - Cleans all CSVs  
+│   │       - Each cleaned CSV becomes a DuckDB table 
 │   │
 │   │  - **Create master_sales…** 
-│   │       → Creates a merged `master_sales` DuckDB table  
-│   │         from compatible sales CSV files 
+│   │       - Creates a  `master_sales` DuckDB table merging compatible sales tables 
 
 │ 
 
@@ -126,23 +123,27 @@ streamlit run app.py
 
 #### Step 1 - Load Data
 
-- Click on the sidebar controls  
-**Clean & (Re)Load all CSVs into DuckDB**
-**Create master_sales (merge compatible sales tables)** 
+- Click on the sidebar controls
+  
+**Clean & (Re)Load all CSVs into DuckDB** 
+**Create master_sales (merge compatible sales tables)**  
 
 #### Step 2 - Summarization
 
 - Select a table
 - Click **Generate Summary**
-- The LLM generates:
-  	– Column-level insights 
-	– Patterns and trends 
+- The LLM generates: 
+  
+   	– Column-level insights 
+  	– Patterns and trends 
 	– Anomalies 
 	– Business interpretations 
 	– Data quality issues 
-- Output: 
-	A structured, human-readable dataset summary 
 
+- Output: 
+  
+    A structured, human-readable dataset summary
+  
 #### Step 3 - Conversational Q&A
 
 - Examples you can type:
