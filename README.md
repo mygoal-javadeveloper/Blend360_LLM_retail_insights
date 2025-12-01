@@ -36,48 +36,68 @@ The repository contains a fully working **Retail Insights Assistant** built usin
 - Natural language to SQL using local Mistral model
 - Fuzzy matching for dirty retail data
 - Streamlit chatbot UI
+  
   	**Modes:**
 	- **Summarization Mode**       simple table summaries
 	- **Conversational Q&A Mode**  LLM-generated SQL with result viewer
+   
 - DuckDB execution engine
 - Multi-Agent Architecture
+  
   	**Agents:**
 	- **LanguageToSQLAgent**  converts natural language to SQL 
 	- **ValidationAgent**     ensures only safe SELECT queries 
-	- **SQLExecutionAgent**   executes SQL on DuckDB 
-
+	- **SQLExecutionAgent**   executes SQL on DuckDB
+   
 
 ## Folder Structure
 
 Blend360_Retail_Insights/
 
-Blend360_Retail_Insights/
-│
-├── app.py
-├── utils.py
-├── agents.py
-├── requirements.txt
-├── README.md
-│
-├── data/
-│   ├── (All original CSV files given by HR)
-│   │
-│   │  Use the Streamlit sidebar:
-│   │  - **Clean & (Re)Load All CSVs into DuckDB**
+Blend360_Retail_Insights/  
+
+│ 
+
+├── app.py 
+
+├── utils.py 
+
+├── agents.py 
+
+├── requirements.txt 
+
+├── README.md 
+
+│ 
+
+├── data/ 
+
+│   ├── (All original CSV files given by HR) 
+│   │ 
+│   │  Use the Streamlit sidebar: 
+│   │  - **Clean & (Re)Load All CSVs into DuckDB** 
 │   │       → Cleans all CSVs  
-│   │       → Each cleaned CSV becomes a DuckDB table
+│   │       → Each cleaned CSV becomes a DuckDB table 
 │   │
-│   │  - **Create master_sales…**
+│   │  - **Create master_sales…** 
 │   │       → Creates a merged `master_sales` DuckDB table  
-│   │         from compatible sales CSV files
-│
-├── presentation/
-│   ├── Architecture_Pipeline_PDF.pdf
-│   ├── Architecture_Pipeline_PPT.pptx
-│   ├── Streamlit_Demo.mp4
-│   ├── Sample_Questions.md
-│
-└── .gitignore
+│   │         from compatible sales CSV files 
+
+│ 
+
+├── presentation/ 
+
+│   ├── Architecture_Pipeline_PDF.pdf 
+
+│   ├── Architecture_Pipeline_PPT.pptx 
+
+│   ├── Streamlit_Demo.mp4 
+
+│   ├── Sample_Questions.md 
+
+│ 
+
+└── .gitignore 
 
 
 ## Running the Project
